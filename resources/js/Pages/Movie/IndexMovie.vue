@@ -55,7 +55,11 @@ const MakeSearch = (e)=>{
 
     <AuthenticatedLayout>
         <!-- component -->
+
         <section class="antialiased bg-gray-100 text-gray-600 m-5">
+            <div class="row w-100 d-flex flex-row-reverse">
+                <a class="btn btn-primary  w-20" :href="route('movie.create')">Create</a>
+                </div>
                 <div class="flex justify-center pt-2">
                     <label >Search</label>
             <input type="search" name="search" @change="MakeSearch" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" />

@@ -86,18 +86,18 @@ const submit = () => {
 
                             <InputError class="mt-2" :message="form.errors.rate" />
                         </div>
-                        <InputLabel for="category_id" value="category_id" />
+                        <InputLabel for="category_id" value="category" />
                         <select v-model="form.category_id" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                             <option v-for="category in categories" :value="category.id">{{ category.title }}</option>
                         </select>
-                        <div>
+                        <div class="flex items-center mt-4 ">
                             <input type="file" @input="form.image = $event.target.files[0]" />
 
                             <InputError class="mt-2" :message="form.errors.image" />
                         </div>
 
 
-                        <div class="flex items-center justify-end mt-4">
+                        <div class="flex items-center justify-end mt-4 ">
 
                             <PrimaryButton class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                                 save

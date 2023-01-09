@@ -38,7 +38,10 @@ const DeleteItem = (ItemId)=>{
 
     <AuthenticatedLayout>
         <!-- component -->
-            <section class="antialiased bg-gray-100 text-gray-600 m-5">
+        <section class="antialiased bg-gray-100 text-gray-600 m-5">
+            <div class="row w-100 d-flex flex-row-reverse">
+                <a class="btn btn-primary  w-20" :href="route('category.create')">Create</a>
+                </div>
                 <div class="flex justify-center pt-2">
                     <!-- Table -->
                     <div class="w-full mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
